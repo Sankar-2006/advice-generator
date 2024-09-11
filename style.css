@@ -1,0 +1,68 @@
+@import url();
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: ; */
+}
+
+:root {
+  --background-color: hsl(217, 19%, 24%);
+  --card-background-color: hsl(217, 19%, 38%);
+  --neon-green: hsl(150, 100%, 66%);
+  --light-cyan: hsl(193, 38%, 86%);
+  --dice-color: hsl(218, 23%, 16%);
+  --quot-font-size: 28px;
+}
+
+body {
+  background-color: var(--dice-color);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main #card {
+  width: 60vw;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+#top-text, #advice-text, #dice-button, #divider {
+    padding: 20px;
+}
+
+#top-text {
+    color: var(--neon-green);
+    text-transform: uppercase;
+}
+
+#advice-text {
+    color: var(--light-cyan);
+    font-size: var(--quot-font-size)
+}
+
+#dice-button {
+    background-color: var(--neon-green);
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+#divider {
+    width: 95%; 
+    color: var(--light-cyan);
+}
+
+
