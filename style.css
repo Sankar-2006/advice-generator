@@ -58,6 +58,12 @@ main #card {
     justify-content: center;
     position: relative;
     top: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.3s ease;
+}
+
+#dice-button:hover {
+  box-shadow: 0 0 20px hsl(150, 100%, 66%), 0 0 30px hsl(150, 100%, 66%);
 }
 
 #divider {
