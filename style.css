@@ -85,7 +85,7 @@ main .card {
   color: var(--light-cyan);
 }
 
-@media (min-width: 375px) {
+@media (max-width: 475px) {
   main .card {
     width: 95%;
   }
