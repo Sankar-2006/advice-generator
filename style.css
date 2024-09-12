@@ -87,6 +87,6 @@ main .card {
 
 @media (max-width: 475px) {
   main .card {
-    width: 95%;
+    width: 350px;
   }
 }
