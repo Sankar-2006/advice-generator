@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "Manrope", sans-serif;
+  font-weight: 800;
 }
 
 :root {
@@ -24,8 +25,9 @@ body {
   justify-content: center;
 }
 
-main #card {
-  width: 60vw;
+main .card {
+  min-height: 300px;
+  width: 500px;
   background-color: var(--background-color);
   display: flex;
   flex-direction: column;
@@ -34,41 +36,51 @@ main #card {
   border-radius: 10px;
 }
 
-#top-text, #advice-text, #dice-button, #divider {
-    padding: 20px;
+.top-text,
+.advice-text,
+.dice-button,
+.divider {
+  padding: 18px;
 }
 
-#top-text {
-    color: var(--neon-green);
-    text-transform: uppercase;
+.top-text {
+  color: var(--neon-green);
+  text-transform: uppercase;
+  position: relative;
+  top: 20px;
 }
 
-#advice-text {
-    color: var(--light-cyan);
-    font-size: var(--quot-font-size)
+.advice-text {
+  color: var(--light-cyan);
+  font-size: var(--quot-font-size);
+  text-align: center;
+  min-height:150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#dice-button {
-    background-color: var(--neon-green);
-    border-radius: 50%;
-    height: 60px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    top: 30px;
-    cursor: pointer;
-    transition: background-color 0.2s ease, box-shadow 0.3s ease;
+.dice-button {
+  border: none;
+  outline: none;
+  background-color: var(--neon-green);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 30px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, box-shadow 0.3s ease;
 }
 
-#dice-button:hover {
+.dice-button:hover {
   box-shadow: 0 0 20px hsl(150, 100%, 66%), 0 0 30px hsl(150, 100%, 66%);
 }
 
-#divider {
-    width: 95%; 
-    color: var(--light-cyan);
+.divider {
+  width: 95%;
+  color: var(--light-cyan);
 }
-
-
