@@ -54,7 +54,7 @@ main .card {
   color: var(--light-cyan);
   font-size: var(--quot-font-size);
   text-align: center;
-  min-height:150px;
+  min-height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,4 +83,10 @@ main .card {
 .divider {
   width: 95%;
   color: var(--light-cyan);
+}
+
+@media (max-width: 375px) {
+  main .card {
+    width: 95%;
+  }
 }
