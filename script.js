@@ -2,7 +2,8 @@ const adviceBox = document.querySelector(".advice-text");
 const idBox = document.querySelector(".top-text span");
 const diceButton = document.querySelector(".dice-button");
 
-const fetchAdvice = () => {
+const fetchAdvice = (num) => {
+  console.log('fetching'+ num)
   fetch(`https://api.adviceslip.com/advice`)
     .then((res) => {
       return res.json();
@@ -18,6 +19,6 @@ const fetchAdvice = () => {
     });
 }
 
-fetchAdvice();
+window.addEventListener('load', fetchAdvice);
 
 diceButton.onclick = fetchAdvice;
